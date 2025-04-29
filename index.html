@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <button class="calc__buttons" onclick="changeCalculator('calculator')">Basic Calculator</button>
+      <button class="calc__buttons" onclick="changeCalculator('change')">Make Change</button>
+    </header>
+    <div class="body">
+      <div class="calculator" id="calculator">
+        <input type="text" id="display" class="display" disabled />
+        <!-- <button onclick="makeChange()">Make Change</button> -->
+        <!-- <input type="text" id="operator" pattern="[+-*/]" />
+    <input type="number" id="N1" value="" />
+    <input type="number" id="N2" value="" /> -->
+        <div class="buttons">
+          <button onclick="clearDisplay()" class="button clear">C</button>
+          <button onclick="appendOperation('/')" class="button operator">
+            /
+          </button>
+          <button onclick="appendOperation('*')" class="button operator">
+            *
+          </button>
+          <button onclick="appendOperation('-')" class="button operator">
+            -
+          </button>
+          <button onclick="appendOperation('+')" class="button operator">
+            +
+          </button>
+          <button onclick="appendNumber('1')" class="button">1</button>
+          <button onclick="appendNumber('2')" class="button">2</button>
+          <button onclick="appendNumber('3')" class="button">3</button>
+          <button onclick="appendNumber('4')" class="button">4</button>
+          <button onclick="appendNumber('5')" class="button">5</button>
+          <button onclick="appendNumber('6')" class="button">6</button>
+          <button onclick="appendNumber('7')" class="button">7</button>
+          <button onclick="appendNumber('8')" class="button">8</button>
+          <button onclick="appendNumber('9')" class="button">9</button>
+          <button onclick="appendNumber('0')" class="button">0</button>
+          <button onclick="calculate()" class="button equal">=</button>
+        </div>
+      </div>
+      <div class= "change__calculator" id="change">
+        <textarea type="text" id="change__display" class="display__change" disabled ></textarea>
+        <div class="buttons">
+          <button onclick="appendChangeNumber('1')" class="button">1</button>
+          <button onclick="appendChangeNumber('2')" class="button">2</button>
+          <button onclick="appendChangeNumber('3')" class="button">3</button>
+          <button onclick="appendChangeNumber('4')" class="button">4</button>
+          <button onclick="appendChangeNumber('5')" class="button">5</button>
+          <button onclick="appendChangeNumber('6')" class="button">6</button>
+          <button onclick="appendChangeNumber('7')" class="button">7</button>
+          <button onclick="appendChangeNumber('8')" class="button">8</button>
+          <button onclick="appendChangeNumber('9')" class="button">9</button>
+          <button onclick="appendChangeNumber('0')" class="button">0</button>
+          <button onclick="appendChangeNumber('.')" class="button">.</button>
+          <button onclick="calculateChange()" class="button equal">=</button>
+                    <button onclick="clearChangeDisplay()" class="button clear">C</button>
+
+        </div>
+    </div>
+  </body>
+  <script src="calculate.js"></script>
+</html>
