@@ -10,14 +10,11 @@
     <header class="header">
       <button class="calc__buttons" onclick="changeCalculator('calculator')">Basic Calculator</button>
       <button class="calc__buttons" onclick="changeCalculator('change')">Make Change</button>
+      <button class="calc__buttons" onclick="changeCalculator('unit')">Unit Converter</button>
     </header>
     <div class="body">
       <div class="calculator" id="calculator">
         <input type="text" id="display" class="display" disabled />
-        <!-- <button onclick="makeChange()">Make Change</button> -->
-        <!-- <input type="text" id="operator" pattern="[+-*/]" />
-    <input type="number" id="N1" value="" />
-    <input type="number" id="N2" value="" /> -->
         <div class="buttons">
           <button onclick="clearDisplay()" class="button clear">C</button>
           <button onclick="appendOperation('/')" class="button operator">
@@ -60,9 +57,32 @@
           <button onclick="appendChangeNumber('0')" class="button">0</button>
           <button onclick="appendChangeNumber('.')" class="button">.</button>
           <button onclick="calculateChange()" class="button equal">=</button>
-                    <button onclick="clearChangeDisplay()" class="button clear">C</button>
-
+          <button onclick="clearChangeDisplay()" class="button clear">C</button>
         </div>
+    </div>
+    <div class="unit__calculator" id="unit">
+      <input type="text" id="unit__display-one" class="display__unit" disabled />
+      <h2 class="converter__text"> &uarr; equals &darr;</h2>
+      <input type="text" id="unit__display-two" class="display__unit" disabled />
+      <div class="buttons__unit">
+        <button onclick="selectUnit('Kilometer')" class="button operator">Kilometer</button>
+        <button onclick="selectUnit('Meter')" class="button operator">Meter</button>
+        <button onclick="selectUnit('Centimeter')" class="button operator">Centimeter</button>
+        <button onclick="selectUnit('Mile')" class="button operator">Mile</button>
+        <button onclick="selectUnit('Foot')" class="button operator">Foot</button>
+        <button onclick="selectUnit('Inch')" class="button operator">Inch</button>
+        <button onclick="appendUnitNumber('1')" class="button">1</button>
+        <button onclick="appendUnitNumber('2')" class="button">2</button>
+        <button onclick="appendUnitNumber('3')" class="button">3</button>
+        <button onclick="appendUnitNumber('4')" class="button">4</button>
+        <button onclick="appendUnitNumber('5')" class="button">5</button>
+        <button onclick="appendUnitNumber('6')" class="button">6</button>
+        <button onclick="appendUnitNumber('7')" class="button">7</button>
+        <button onclick="appendUnitNumber('8')" class="button">8</button>
+        <button onclick="appendUnitNumber('9')" class="button">9</button>
+        <button onclick="appendUnitNumber('0')" class="button">0</button>
+        <button onclick="appendUnitNumber('.')" class="button">.</button>
+        <button onclick="clearUnitDisplay()" class="button clear">C</button>
     </div>
   </body>
   <script src="calculate.js"></script>
