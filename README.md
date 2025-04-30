@@ -2,7 +2,7 @@
 
 ## About this project
 
-A basic calculator application written in basic JavaScript. Currently includes a simple calculator and a change calculator.
+A basic calculator application written in basic JavaScript. Currently includes a simple calculator, a change calculator and a length unit converter.
 
 ## Future Additions
 
